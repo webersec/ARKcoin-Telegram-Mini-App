@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
-import './index.css'; // Assuming this file contains additional styles
-import Arrow from './icons/Arrow'; // Assuming this is a component for an arrow icon
-import { bear, coin, highVoltage, notcoin, rocket, trophy } from './images'; // Assuming these are imported images
+import './index.css';
+import Arrow from './icons/Arrow';
+import { bear, coin, highVoltage, notcoin, rocket, trophy } from './images';
 
 const App = () => {
-  const [points, setPoints] = useState(29857775);
-  const [energy, setEnergy] = useState(2532);
+  const [points, setPoints] = useState<number>(29857775);
+  const [energy, setEnergy] = useState<number>(2532);
   const [clicks, setClicks] = useState<{ id: number, x: number, y: number }[]>([]);
-  const pointsToAdd = 12;
-  const energyToReduce = 12;
+  const pointsToAdd: number = 12;
+  const energyToReduce: number = 12;
 
   const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     if (energy - energyToReduce < 0) {
@@ -44,18 +44,19 @@ const App = () => {
         <div className="radial-gradient-overlay"></div>
       </div>
 
-        <div className="fixed top-0 left-0 w-full px-4 pt-8 z-10 flex items-center justify-center text-white">
-          <div className="w-full max-w-screen-sm cursor-pointer">
-            <div className="bg-[#1f1f1f] text-center py-2 rounded-xl">
+      <div className="w-full z-10 min-h-screen flex flex-col items-center text-white">
+        {/* Top section with Join squad link */}
+        <div className="fixed top-0 left-0 w-full px-4 pt-8 z-10 flex flex-col items-center text-white">
+          <div className="w-full cursor-pointer">
+            <div className="bg-gray-900 text-center py-2 rounded-xl">
               <p className="text-lg">
-                <a href="https://t.me/arkcoinofficial" className="text-white flex items-center justify-center">
+                <a href="https://t.me/arkcoinofficial" className="text-white flex items-center">
                   Join squad <Arrow size={18} className="ml-1 inline-block" />
                 </a>
               </p>
             </div>
           </div>
         </div>
-
 
         {/* Points and Gold sections */}
         <div className="mt-12 text-5xl font-bold flex items-center">
