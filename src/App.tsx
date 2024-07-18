@@ -44,19 +44,18 @@ const App = () => {
         <div className="radial-gradient-overlay"></div>
       </div>
 
-      <div className="w-full z-10 min-h-screen flex flex-col items-center text-white">
-        {/* Top section with Join squad link */}
-        <div className="fixed top-0 left-0 w-full px-4 pt-8 z-10 flex flex-col items-center text-white">
-          <div className="w-full cursor-pointer">
-            <div className="bg-gray-900 text-center py-2 rounded-xl">
+        <div className="fixed top-0 left-0 w-full px-4 pt-8 z-10 flex items-center justify-center text-white">
+          <div className="w-full max-w-screen-sm cursor-pointer">
+            <div className="bg-[#1f1f1f] text-center py-2 rounded-xl">
               <p className="text-lg">
-                <a href="https://t.me/arkcoinofficial" className="text-white flex items-center">
+                <a href="https://t.me/arkcoinofficial" className="text-white flex items-center justify-center">
                   Join squad <Arrow size={18} className="ml-1 inline-block" />
                 </a>
               </p>
             </div>
           </div>
         </div>
+
 
         {/* Points and Gold sections */}
         <div className="mt-12 text-5xl font-bold flex items-center">
