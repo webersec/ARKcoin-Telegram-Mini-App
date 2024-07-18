@@ -51,7 +51,7 @@ const App = () => {
             <div className="bg-[#1f1f1f] text-center py-2 rounded-xl"">
               <p className="text-lg">
                 <a href="https://t.me/arkcoinofficial">
-                  Join squad <Arrow size={18} className="ml-1 inline-block" />
+                  Join squad <Arrow size={18} className="ml-0 mb-1 inline-block" />
                 </a>
               </p>
             </div>
