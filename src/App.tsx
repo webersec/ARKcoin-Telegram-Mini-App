@@ -48,7 +48,7 @@ const App = () => {
         {/* Top section with Join squad link */}
         <div className="fixed top-0 left-0 w-full px-4 pt-8 z-10 flex flex-col items-center text-white">
           <div className="w-full cursor-pointer">
-            <div className="bg-gray-900 text-center py-2 rounded-xl">
+            <div className="bg-[#1f1f1f] text-center py-2 rounded-xl"">
               <p className="text-lg">
                 <a href="https://t.me/arkcoinofficial">
                   Join squad <Arrow size={18} className="ml-1 inline-block" />
